@@ -1,0 +1,178 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057\deflangfe2057{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\f0\fs22 Log \par
+Task Force Alpha (v2.0.2)\par
+Written By M A Plant\par
+Created For Devils Inc Studios\par
+In the early 22nd Century spaceflight has become the norm, Earth is now protected by an Orbital Defence Satellite, However today just happens to be the day its software fails.\par
+\par
+You are tasked with taking out anything that might damage the planet until the OD Platform can be repaired. \par
+\par
+Controls\par
+\par
+Use the arrow keys to control the ship\par
+Use the <space> bar to fire\par
+Use <p> to pause\par
+Use <Esc> to quit the game\par
+\par
+\par
+V0.1 19/3/13 - 13.20\par
+Initial design and compiling, also pre-test completed, screen scrolls space craft is controllable.\par
+\par
+V0.2 19/3/13 - 13.40\par
+Had to alter the loading graphic as it wasn't displaying correctly this has now been sorted and the game loads as normal. Also had to adjust the menu screen background as this displayed incorrectly as well.\par
+\par
+V0.3 26/3/13 - 20.43\par
+Altered backgrounds to delete the "line" illusion that seemed to appear, also corrected error that would cause the game to abort on moving to level 2. Added new enemies and second level to the game. Added new music to level2 and will continue work. \par
+\par
+* Corrected issue which would reset the score to Zero on level progression. \par
+* Corrected issue that would cause game to crash on entering level 2\par
+* Corrected issue that caused the game to crash during level 2.\par
+* Corrected issue with Level 2 enemies not spawning correctly.\par
+* Corrected enemy Spawn issue on level 2\par
+* Adjusted scoring system\par
+* Added Level 3\par
+\par
+V0.4 27/3/13 - 11.50\par
+* Corrected enemy assault being too difficult to survive on Level 2\par
+\par
+v0.5 10/5/13 - 16.25\par
+* Fixed Level changing parameters it should switch levels correctly now. Should now contain 5 fully playable levels\par
+* Added Pause system, game can now be paused.\par
+\par
+v0.6 15/5/13 - 10.20\par
+Added new loading screen\par
+\par
+*Fixed assault craft fire system enemies coming from behind will now attack the player more accurately\par
+*Corrected spelling mistakes In this document.\par
+\par
+v0.7 23/05/13 - 18.29\par
+Added a new instruction screen\par
+Added a new first level a lot easier to survive and simple getting used to the game method\par
+\par
+*Removed the reverse flying enemy from Level 3, it was getting difficult to survive as they fly faster than previous enemies\par
+\par
+v0.8 25/5/13 - 13.02\par
+Added more debris to shoot at on Level 1\par
+Altered Screen resolution to 1024x768\par
+Replaced the bad looking old asteroid with a newer cleaner looking image\par
+\par
+*Fixed health glitch, collectible will now repair ship regardless of current health\par
+\par
+V0.9 06/08/13 - 13.07\par
+\par
+Replaced the loading screen in line with the studio requirement\par
+Final clean-up has been done\par
+Reset Aspect Ratio\par
+\par
+V0.9.2 07/08/13 - 20.21\par
+\par
+*Fixed a crash under Windows 8 - Audio script was not allowing the game to run\par
+\par
+Lowered Audio of BG music tended to hurt ones ears after a few loops through\par
+\par
+V1.0.1 21/10/13 - 13.09\par
+\par
+Replaced the loading screen for release to Gamejolt this is to fix an issue with the size of the loading screen I can't seem to correct.\par
+\par
+29.12.13\par
+Started a rebuild of Task Force Alpha due to hitting the limitations of what I can or cant  do using Game Maker. The original game will remain free to play on Yoyo. This document will as usual track mistakes, errors, bugs and corrections as they are built. \par
+\par
+The first major change to Version 2.0 is the use of Unity rather than Game Maker, while Game Maker is a nice engine it simply doesn't have the flexibility we are afforded with Unity. Also as you may have noticed it's also 2.5D rather than 2D this was an unfortunate side effect of the engine change. Still the game should be just as fun.\par
+\par
+*Added \tab : Player controller to control the player ship\par
+*Added \tab : Projectile controller\par
+*Added \tab : Enemy controller\par
+*Added \tab : Lighting, particle and Camera effects\par
+*Added\tab : Controllers for collisions and destructions\par
+*Added\tab : Scoring System\par
+*Added \tab : GUI elements\par
+*Added\tab : Credits\par
+*Added \tab : Homepage Launcher\par
+*Adjusted \tab : Some in game speed options to allow for better control\par
+*Adjusted\tab : Explosion size to look a little better than the huge one that triggered before\par
+\par
+30.12.13\par
+*Added\tab : Shield effect and boost\par
+*Added\tab : Background effects\par
+*Added\tab : Audio and Sound Effects\par
+*Fixed\tab : Key issues that caused the keys to trigger the wrong effects\par
+*Corrected\tab : Spelling errors in the Win/Loss conditions\par
+\par
+V2.1 - 11.01.14\par
+Rebuilt the game code into C# for greater over all control of programmable elements of the game. This will allow me to make minor changes without having to re-write mass amounts of code.\par
+*Added \tab : Wrapping flight effect, if player leaves one side of the screen they appear at the other\par
+\par
+V2.0.1 - 24.01.14\par
+Cleaned up the project folder so everything follows the original convention I had in mind to keep objects, textures and the likes all together much neater in packaging the project up.\par
+\pard\nowidctlpar\fi-1440\li1440 *Added \tab : System to generate random speeds of the enemy objects, each will now have a uniquely random variable assigned by the system.\par
+*Fixed\tab : Error with incorrect physic components attached\par
+*Fixed\tab : Variable that prevented enemy objects been destroyed caused by missing tag variable\par
+*Fixed \tab : An error that caused the laser shots to not be restricted by each individual key press, had Key instead of KeyDown, this caused too many instances to fire too quickly. \par
+\pard\nowidctlpar\par
+V2.0.2 \endash  02.03.14\par
+\pard\nowidctlpar\fi-1440\li1440 *Added \tab : GUI elements and repaired the scoring system, score will now clock up as enemies are destroyed.\par
+*Added \tab : New Load Screen Elements, will also save data to the Devils Inc string of the Registry instead of Unknown Company.\par
+\par
+v2.0.3 - 22-03-14\par
+*Added\tab : New sound effects\par
+*Added\tab : New missed counter, this will enable me to create a secondary requirement for failure of a level.\par
+*Added\tab : Main Menu, now fully functional.\par
+*Adjusted\tab : Variables for projectile speeds\par
+*Adjusted\tab : Particle effect of the explosion, the original was far to big and looked messy.\par
+*Fixed\tab : Explosion prefab, effects weren't working correctly\par
+*Fixed\tab : Collision issue causing lives to decrease by 2 each time the player was struck.\par
+\par
+v2.0.4 - 23-03-14\par
+*Fixed\tab : Callback error that caused the Shield transform to not operate correctly.\par
+*Fixed\tab : GUI Flooding error\par
+*Issue\tab : Shields can only be used once per play, I will have to read up and address this later as I have a very specific idea of how I want this to work. It has been logged on Traq.\par
+\par
+v2.1 - 25-03-14\par
+*Added\tab : Background screens to load and Lose screens these can be switched out in the editor when we have better ones than my lame Photoshop attempts.\par
+*Added\tab : Scrolling Background effect, had to add a directional light source as well as it turned to be too dark otherwise\par
+*Added\tab : Mesh collider for better collision results\par
+*Added\tab : New ship geometry for a model much better for the games over all look\par
+*Added\tab : New asteroid geometry and a scale system to give the illusion each enemy is different.\par
+\par
+v2.1.5 - 26-03-2014\par
+*Fixed\tab : The shield glitch that occurred from v2.0.2 this has now been rectified and Shields are useable at a set limit.\par
+*Added\tab : New GUI Elements, also added an available Shields variable.\par
+*Added \tab : Level 2 - Temporary work around for the level loading system\par
+\par
+v2.1.5a - 27-03-2014\par
+*Fixed\tab : Level Load glitch\par
+*Fixed\tab : Oversized or broken asteroid geometry\par
+*Fixed \tab : Shields forgot to reset the keycode,\par
+\par
+v2.1.5c - 29-03-2014\par
+*Added\tab : Added the credits back in, these will be updated or adjusted as needed\par
+*Added\tab : BGM to level 1 and ambient engine noise as well. \par
+*Fixed\tab : Shield issue where its variable wasn't resetting as long as the game was running.\par
+*Fixed\tab : Loading error that caused the control script to continually and repeatedly load on each level.\par
+*Fixed\tab : Shield Level bug, the bug that wouldnt allow shields to be used after level 1. \par
+*Adjusted\tab : Level 2 enemy spawns.\par
+\par
+v2.1.6a - 30-03-2014\par
+*Fixed\tab : Credit screen now loads again\par
+*Fixed\tab : Shield glith, would load after the Win screen was present. \par
+*Fixed\tab : Shield glitch that would prevent use of the shields on Level 2\par
+\par
+2.2.1 - 04-04-2014\par
+*Added\tab : New Powerup System (Currently limited to health and shields but can be extended now as needed)\par
+*Fixed\tab : GUI display issues\par
+*Adjusted\tab : Level 2 enemy speeds\par
+*Adjusted\tab : GUI elements, size and placing for now\par
+\par
+2.2.1a \endash  06-04-2014\par
+*Added\tab : New level timer, this allows for better control of levels and better in game performance.\par
+\par
+2.2.1c - 08-04-2014\par
+*Added\tab : New spawn and invicibility system, this is to solve the getting slammed issue where players could die almost instantly on respawn.\par
+*Added\tab : Joypad support, a joypad should now work with the game, it is built using PS3 and Motionjoy controller but any joypad should take the input.\par
+*Fixed\tab : An update that allowed the mouse to control fire and shields after joypad support was added, this has now been corrected.\par
+\par
+2.2.1d\par
+*Fixed\tab : An issue that caused the game timer not to reset after lose conditions were triggered.\par
+*Added\tab : New splash and lose screens created by Ashley Baker\par
+}
+ 
