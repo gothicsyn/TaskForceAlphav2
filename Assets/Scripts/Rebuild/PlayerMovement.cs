@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 	[SerializeField]float movementSpeed = 100;
 	[SerializeField]float turnSpeed = 50;
+	[SerializeField]Thruster[] thruster;
 
 	Transform myT;
 
